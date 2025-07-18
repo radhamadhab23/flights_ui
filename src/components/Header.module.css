@@ -1,0 +1,15 @@
+/* src/components/Header.module.css */
+.navbar {
+    padding: .7rem 1.2rem;
+    background-color: #fff;
+    transition-duration: .2s;
+}
+
+.navLink:hover {
+    color: #e12323 !important; /* The navLink class will be applied to NavLink component */
+    transition-duration: .2s;
+}
+
+.myAccount .dropdown-header {
+    align-content: flex-start;
+}
