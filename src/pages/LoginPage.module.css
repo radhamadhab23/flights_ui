@@ -1,0 +1,36 @@
+/* src/pages/LoginPage.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 6vh;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.userBox {
+    width: 100%;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.userBox img {
+    margin-bottom: 1rem;
+}
+
+.userBox h3 {
+    margin-bottom: 1.5rem;
+}
+
+.form .form-group {
+    margin-bottom: 1rem;
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
