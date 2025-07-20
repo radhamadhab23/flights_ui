@@ -1,0 +1,60 @@
+/* src/pages/AboutUsPage.module.css */
+.heroBanner {
+    position: relative;
+    width: 100%;
+    height: 40vh; /* 40% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.bannerOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+    z-index: 2;
+}
+
+.bannerTitle {
+    position: relative;
+    z-index: 3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.contentSection {
+    background-color: #f8f9fa; /* Soft, light gray background */
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.textContent {
+    max-width: 800px; /* Limits the width of text for better readability */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+.textContent p {
+    margin-bottom: 1.5rem;
+}

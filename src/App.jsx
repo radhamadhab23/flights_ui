@@ -12,6 +12,7 @@ import ReviewBookingPage from './pages/ReviewBookingPage';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import Header from './components/Header';
+import AboutUsPage from './pages/AboutUsPage';
 
 // Placeholder for pages we haven't built yet
 const Placeholder = ({ title }) => (
@@ -37,7 +38,7 @@ function App() {
         {/* Placeholder routes */}
         <Route path="bookings" element={<Placeholder title="My Bookings" />} />
         <Route path="contact" element={<Placeholder title="Contact Us" />} />
-        <Route path="about" element={<Placeholder title="About Us" />} />
+        <Route path="about" element={<AboutUsPage />} />
         <Route path="*" element={<Placeholder title="404 Not Found" />} />
 
       </Route>
