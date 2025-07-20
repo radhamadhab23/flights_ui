@@ -1,0 +1,150 @@
+/* src/components/FlightSearchForm.module.css */
+.searchFlight {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 900px; /* Set a min-width for the form */
+}
+/* ... other styles like .radioGroup, .formRow, .inputGroup etc. remain the same ... */
+.radioGroup {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.formRow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.inputGroup {
+    position: relative;
+    flex: 1;
+}
+
+.inputLabel {
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.inputField {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.swapButton {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    color: #6c757d;
+}
+.swapButton:hover {
+    background-color: #f8f9fa;
+}
+
+.searchButton {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 0.75rem;
+    align-self: flex-end;
+    height: 50px;
+}
+.searchButton:hover {
+    background-color: #0b5ed7;
+}
+.travellerInput {
+    cursor: pointer;
+    text-align: left;
+}
+.travellerPopover {
+    position: absolute;
+    top: 100%;
+    right: 0; /* Align to the right of the input */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 1rem;
+    z-index: 10;
+    width: 320px; /* Wider popover */
+}
+
+/* --- NEW STYLES for advanced popover --- */
+.popoverSection {
+    margin-bottom: 1rem;
+}
+.popoverTitle {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+.popoverSubtitle {
+    font-size: 0.8rem;
+    color: #adb5bd;
+}
+.popoverRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.counterButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.popoverDivider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 1rem 0;
+}
+.classOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.doneButton {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.doneButton:hover {
+    background-color: #0b5ed7;
+}

@@ -1,0 +1,73 @@
+/* src/components/FilterSidebar.module.css */
+
+.filterDiv {
+    padding: 15px;
+}
+
+.filter h4 {
+    font-weight: 800;
+    line-height: .75em;
+    font-size: 1.1em;
+    color: #321d1d;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.filterBox > div {
+    margin: 10px 0px 30px 0px;
+}
+
+.timeSlot {
+    margin-bottom: 30px;
+}
+
+.squareBox {
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: .7em;
+    width: 23%;
+    transition-duration: .2s;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.squareBox:hover {
+    border-color: #0075ff;
+}
+
+.squareBox.active {
+    background-color: #0075ff;
+    border-color: #0075ff;
+    color: white;
+}
+
+.filterImgDiv img {
+    width: 34px;
+    height: 34px;
+}
+
+.priceRangeOutput {
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    color: #808080;
+    font-size: .9em;
+}
+
+.clrFilterDiv {
+    margin-top: 30px;
+}
+
+.btnLink {
+    background: none;
+    border: none;
+    outline: none;
+    color: #0075ff;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btnLink:hover {
+    text-decoration: underline;
+}

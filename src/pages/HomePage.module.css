@@ -1,0 +1,34 @@
+/* src/pages/HomePage.module.css */
+.firstSection {
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('/img/plane3.12.jpg');
+    min-height: 100vh;
+    padding: 50px;
+}
+.bannerDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+.bannerText {
+    color: white;
+    font-size: 54px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.secondSection {
+    padding: 50px;
+}
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+     /* Adjust this percentage to control form width */
+     height: 50%;
+     background-color:black;
+}
