@@ -1,23 +1,43 @@
 // src/App.jsx
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import HomePage from './pages/HomePage'; // 1. IMPORT the real HomePage
+import HomePage from './pages/HomePage';
 import SearchPage from './components/SearchPage';
 import ReviewBookingPage from './pages/ReviewBookingPage';
-// You can remove the Placeholder component if you want
-// const Placeholder = ...
+import RegisterPage from './pages/RegisterPage';
+import { Link } from 'react-router-dom';
+
+
+// Placeholder for pages we haven't built yet
+const Placeholder = ({ title }) => (
+    <div style={{ padding: '50px', textAlign: 'center' }}>
+        <h1>{title} Page</h1>
+        <p>This page will be built soon. <Link to="/">Go Home</Link></p>
+    </div>
+);
+
 
 function App() {
   return (
     <Routes>
+      {/* This parent route renders the Layout for all child routes */}
       <Route path="/" element={<Layout />}>
-        {/* 2. REPLACE Placeholder with HomePage */}
-        <Route index element={<HomePage />} /> 
 
-        <Route path="search" element={<SearchPage />} /> 
-        <Route path="/review-booking" element={<ReviewBookingPage />} />
-        {/* ... other routes ... */}
+        {/* Child Routes - These will be rendered inside the Layout's <Outlet /> */}
+        <Route index element={<HomePage />} />
+        <Route path="search" element={<SearchPage />} />
+        <Route path="review-booking" element={<ReviewBookingPage />} />
+        <Route path="register" element={<RegisterPage />} />
+        
+        {/* Placeholder routes */}
+        <Route path="login" element={<Placeholder title="Login" />} />
+        <Route path="bookings" element={<Placeholder title="My Bookings" />} />
+        <Route path="contact" element={<Placeholder title="Contact Us" />} />
+        <Route path="about" element={<Placeholder title="About Us" />} />
+        <Route path="*" element={<Placeholder title="404 Not Found" />} />
+
       </Route>
     </Routes>
   );

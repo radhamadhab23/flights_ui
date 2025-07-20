@@ -7,16 +7,16 @@ import PopularDestinations from '../components/PopularDestinations';
 const HomePage = () => {
     return (
         <>
-            <section className={styles.firstSection}>
-                <div className={styles.bannerDiv}>
+            {/* This section is now a single column for centered content */}
+            <section className={styles.heroSection}>
+                <div className={styles.bannerContent}>
                     <h1 className={styles.bannerText}>
                         Book Domestic and International Flight Tickets
                     </h1>
                 </div>
-              <div className={styles.formWrapper}>
-                    <FlightSearchForm />
-                </div>
+                <FlightSearchForm />
             </section>
+
             <section className={styles.secondSection}>
                 <PopularDestinations />
             </section>

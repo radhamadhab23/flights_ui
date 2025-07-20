@@ -1,5 +1,3 @@
-// src/components/Header.jsx
-
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Header.module.css'; // Import the module
@@ -28,8 +26,13 @@ const Header = () => {
                         } to="/bookings">My Bookings</NavLink>
                     </li>
                 </ul>
-                {/* ... rest of the component ... */}
                 <ul className="navbar-nav">
+                    {/* --- ADDED SIGN UP LINK --- */}
+                    <li className="nav-item" style={{ marginRight: '10px' }}>
+                        <Link to="/register" className="btn btn-light">
+                            Sign Up
+                        </Link>
+                    </li>
                     <li className="nav-item">
                         <Link to="/login">
                             <button className="btn btn-outline-danger" style={{ borderRadius: '25rem' }}>

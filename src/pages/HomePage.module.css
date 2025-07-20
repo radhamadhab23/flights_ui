@@ -1,34 +1,32 @@
 /* src/pages/HomePage.module.css */
-.firstSection {
+.heroSection {
     display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('/img/plane3.12.jpg');
-    min-height: 100vh;
-    padding: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/img/plane3.12.jpg');
+    min-height: 90vh; /* Use 90% of the viewport height */
+    padding: 2rem;
+    text-align: center;
 }
-.bannerDiv {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 30px;
+
+.bannerContent {
+    margin-bottom: 2rem;
 }
+
 .bannerText {
     color: white;
-    font-size: 54px;
+    font-size: 3.5rem; /* Slightly larger font */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
+    /* Add a stronger shadow to make text pop */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); 
 }
+
 .secondSection {
     padding: 50px;
 }
-.formWrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-     /* Adjust this percentage to control form width */
-     height: 50%;
-     background-color:black;
-}
+
+/* We no longer need the old .firstSection, .bannerDiv, or .formWrapper styles */
