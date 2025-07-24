@@ -1,12 +1,18 @@
-// src/context/AuthProvider.jsx
 import React, { useState } from 'react';
 import { AuthContext } from './AuthContext';
 
 const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(() => localStorage.getItem('token'));
+
   const [user, setUser] = useState(() => {
     const storedUser = localStorage.getItem('user');
-    return storedUser ? JSON.parse(storedUser) : null;
+    try {
+      return storedUser ? JSON.parse(storedUser) : null;
+    } catch (e) {
+      console.error("Failed to parse user from localStorage. Removing invalid data.", e);
+      localStorage.removeItem('user'); // Clear corrupted user data
+      return null;
+    }
   });
 
   const login = (newToken, userData) => {

@@ -14,6 +14,7 @@ import LoginPage from './pages/LoginPage';
 import Header from './components/Header';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage';
+import ProtectedRoute from './components/Protectedroute';
 
 // Placeholder for pages we haven't built yet
 const Placeholder = ({ title }) => (
@@ -36,8 +37,10 @@ function App() {
         <Route path="register" element={<RegisterPage />} />
         <Route path="login" element={<LoginPage />} />
         
-        {/* Placeholder routes */}
-        <Route path="bookings" element={<Placeholder title="My Bookings" />} />
+        {/* Protected routes */}
+        <Route element={<ProtectedRoute/>}>
+          <Route path="bookings" element={<Placeholder title="My Bookings" />} />
+        </Route>
         <Route path="contact" element={<ContactUsPage title="Contact Us" />} />
         <Route path="about" element={<AboutUsPage />} />
         <Route path="*" element={<Placeholder title="404 Not Found" />} />
