@@ -15,6 +15,7 @@ import Header from './components/Header';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage';
 import ProtectedRoute from './components/Protectedroute';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 // Placeholder for pages we haven't built yet
 const Placeholder = ({ title }) => (
@@ -43,6 +44,7 @@ function App() {
         </Route>
         <Route path="contact" element={<ContactUsPage title="Contact Us" />} />
         <Route path="about" element={<AboutUsPage />} />
+        <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<Placeholder title="404 Not Found" />} />
 
       </Route>
