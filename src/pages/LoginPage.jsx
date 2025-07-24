@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './LoginPage.module.css';
-
+import {useAuth} from '../hooks/useAuth'; // Assuming you have a custom hook for auth context
 const LoginPage = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -33,10 +34,12 @@ const LoginPage = () => {
       if (!response.ok) {
         throw new Error(result?.error?.message || 'Login failed. Please check your credentials.');
       }
-
+      // Call the login function from context
+      login(result.data?.jwt || '');
+console.log('Login successful, received token:', result.data.jwt);
       alert('Login successful!');
       // Save token in localStorage if needed
-      localStorage.setItem('token', result.data?.token || '');
+      localStorage.setItem('token', result.data?.jwt || '');
       navigate('/'); // redirect to homepage or dashboard
 
     } catch (err) {
