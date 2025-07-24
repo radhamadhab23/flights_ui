@@ -1,0 +1,23 @@
+.termsbanner-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.termsbannerimg {
+  max-width: 100%;
+  height: auto;
+}
+
+.section.section1 {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.7;
+}

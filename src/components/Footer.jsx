@@ -19,7 +19,7 @@ const Footer = () => {
                                     <li className="list-item"><Link className={styles.footerLinks} to="/contact">Contact Us</Link></li>
                                     <li className="list-item"><Link className={styles.footerLinks} to="/about">About Us</Link></li>
                                     <li className="list-item"><Link className={styles.footerLinks} to="/privacy-policy">Privacy Policy</Link></li>
-                                    <li className="list-item"><Link className={styles.footerLinks} to="/terms">Terms &amp; Conditions</Link></li>
+                                    <li className="list-item"><Link className={styles.footerLinks} to="/terms-and-conditions">Terms &amp; Conditions</Link></li>
                                 </ul>
                             </div>
                         </div>
